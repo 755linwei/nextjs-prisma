@@ -1,5 +1,10 @@
 // prisma.config.ts
-import "dotenv/config";
+import { config } from 'dotenv'
+import path from 'path'
+
+// config({ path: path.join(__dirname, '.env.local') })
+config({ path: path.join(__dirname, '.env.deploy') })
+
 import { defineConfig, env } from "prisma/config";
 
 export default defineConfig({
@@ -8,6 +13,6 @@ export default defineConfig({
     path: "prisma/migrations",
   },
   datasource: {
-    url: env("DATABASE_URL"), // 读取.env中的DATABASE_URL
+   url: env('DIRECT_URL'),
   },
 });

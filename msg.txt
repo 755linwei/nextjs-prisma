@@ -1,0 +1,13 @@
+ ('user-001', '张三', 'zhangsan@test.com', true,  NOW(), NOW()),
+  ('user-002', '李四', 'lisi@test.com',     true,  NOW(), NOW()),
+  ('user-003', '王五', 'wangwu@test.com',   false, NOW(), NOW()),
+  ('user-004', '赵六', 'zhaoliu@test.com',  true,  NOW(), NOW()),
+  ('user-005', '钱七', 'qianqi@test.com',   false, NOW(), NOW());
+
+  - 密码明文对照表：
+-- user-001  张三   ->  Kx7mP2qR
+-- user-002  李四   ->  Bn4tY8wZ
+-- user-003  王五   ->  Fh3jL6cV
+-- user-004  赵六   ->  Qw9eR5uM
+-- user-005  钱七   ->  Tx2sN7bK
+-- user-006  孙八   ->  Gp6dV4yH

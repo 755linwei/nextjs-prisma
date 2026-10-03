@@ -52,9 +52,9 @@ export default function LoginPage() {
     <div style={{ padding: 20 }}>
       <div>
         <h1>注册</h1>
-        <input type="text" placeholder="Name" value={name} onChange={(e) => setName(e.target.value)} />
-        <input type="text" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} />
-        <input type="password" placeholder="Password" value={password} onChange={(e) => setPassword(e.target.value)} />
+        <input type="text" placeholder="请输入姓名" value={name} onChange={(e) => setName(e.target.value)} />
+        <input type="text" placeholder="请输入邮箱" value={email} onChange={(e) => setEmail(e.target.value)} />
+        <input type="password" placeholder="请输入密码" value={password} onChange={(e) => setPassword(e.target.value)} />
         <button type="button" onClick={handleSignUp}>Sign Up</button>
       </div>
 
@@ -62,8 +62,8 @@ export default function LoginPage() {
 
       <div>
         <h1>登录</h1>
-        <input type="text" placeholder="Email" value={signEmail} onChange={(e) => setSignEmail(e.target.value)} />
-        <input type="password" placeholder="Password" value={signPassword} onChange={(e) => setSignPassword(e.target.value)} />
+        <input type="text" placeholder="请输入邮箱" value={signEmail} onChange={(e) => setSignEmail(e.target.value)} />
+        <input type="password" placeholder="请输入密码" value={signPassword} onChange={(e) => setSignPassword(e.target.value)} />
         <button type="button" onClick={handleSignIn}>Sign In</button>
       </div>
 
